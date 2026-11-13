@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento Loja</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Pagamento Loja</h1>
+    <p class="sub">Tesouraria – ARLS Estrela no Horizonte nº 2.575</p>
+  </header>
+
+  <section class="barra">
+    <input type="search" id="busca" placeholder="Buscar por nome ou CIM...">
+    <button id="btnAddMes" class="btn">+ Adicionar mês</button>
+    <button id="btnAddMembro" class="btn">+ Adicionar membro</button>
+    <button id="btnCsv" class="btn sec">Exportar CSV</button>
+    <button id="btnReset" class="btn perigo">Restaurar dados originais</button>
+  </section>
+
+  <section class="legenda">
+    Clique numa célula para alternar:
+    <span class="tag pg">PG</span> pago
+    <span class="tag vazio">&nbsp;&nbsp;</span> pendente
+    <span class="tag x">X</span> não paga
+    <span class="tag na">—</span> não se aplica
+  </section>
+
+  <main class="tabela-wrap">
+    <table id="tabela">
+      <thead></thead>
+      <tbody></tbody>
+      <tfoot></tfoot>
+    </table>
+  </main>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
